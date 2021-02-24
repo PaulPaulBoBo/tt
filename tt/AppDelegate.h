@@ -11,6 +11,8 @@
 
 @property (nonatomic, strong) UIWindow *window;
 
+@property (nonatomic,assign) BOOL allowRotation;
+
 @end
 
 typedef enum : NSUInteger {

@@ -16,16 +16,21 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - TXLiteAVSDK_Professional (8.3.9884)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
   - Masonry
   - TXLiteAVSDK_Professional (from `http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Professional.podspec`)
+  - YYKit
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - YYKit
 
 EXTERNAL SOURCES:
   TXLiteAVSDK_Professional:
@@ -35,7 +40,8 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   TXLiteAVSDK_Professional: b30e3f46e709eba26d92b2dca5c2003fb47e6598
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: b8c6e3f447e2985a149bae5b43e4b99716a43786
+PODFILE CHECKSUM: 083b5d72238261d7bf6bdcb5b356515c9291d350
 
 COCOAPODS: 1.10.1

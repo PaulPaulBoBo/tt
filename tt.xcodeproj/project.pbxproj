@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4E1F0425E62BB700C59F88 /* UIDevice+RLiteDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E1F0325E62BB700C59F88 /* UIDevice+RLiteDevice.m */; };
+		0B4E1F1425E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E1F1325E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m */; };
+		0B4E1F1825E64D9000C59F88 /* R_LBPCoverOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E1F1725E64D9000C59F88 /* R_LBPCoverOperationView.m */; };
 		0B6A789625E4AC6C00A0BAF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A789525E4AC6C00A0BAF3 /* AppDelegate.m */; };
 		0B6A789C25E4AC6C00A0BAF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A789B25E4AC6C00A0BAF3 /* ViewController.m */; };
 		0B6A789F25E4AC6C00A0BAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6A789D25E4AC6C00A0BAF3 /* Main.storyboard */; };
@@ -29,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4E1F0225E62BB700C59F88 /* UIDevice+RLiteDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+RLiteDevice.h"; sourceTree = "<group>"; };
+		0B4E1F0325E62BB700C59F88 /* UIDevice+RLiteDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+RLiteDevice.m"; sourceTree = "<group>"; };
+		0B4E1F1225E63D1600C59F88 /* RLiveBraodcastPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLiveBraodcastPlayerViewController.h; sourceTree = "<group>"; };
+		0B4E1F1325E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLiveBraodcastPlayerViewController.m; sourceTree = "<group>"; };
+		0B4E1F1625E64D9000C59F88 /* R_LBPCoverOperationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = R_LBPCoverOperationView.h; sourceTree = "<group>"; };
+		0B4E1F1725E64D9000C59F88 /* R_LBPCoverOperationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = R_LBPCoverOperationView.m; sourceTree = "<group>"; };
 		0B6A789125E4AC6C00A0BAF3 /* tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6A789425E4AC6C00A0BAF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B6A789525E4AC6C00A0BAF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +115,10 @@
 				0B6A789525E4AC6C00A0BAF3 /* AppDelegate.m */,
 				0B6A789A25E4AC6C00A0BAF3 /* ViewController.h */,
 				0B6A789B25E4AC6C00A0BAF3 /* ViewController.m */,
+				0B4E1F1225E63D1600C59F88 /* RLiveBraodcastPlayerViewController.h */,
+				0B4E1F1325E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m */,
+				0B4E1F1625E64D9000C59F88 /* R_LBPCoverOperationView.h */,
+				0B4E1F1725E64D9000C59F88 /* R_LBPCoverOperationView.m */,
 				0B6A78A025E4AC7100A0BAF3 /* Assets.xcassets */,
 				0B6A78A525E4AC7100A0BAF3 /* Info.plist */,
 				0B6A78A225E4AC7100A0BAF3 /* LaunchScreen.storyboard */,
@@ -140,6 +153,8 @@
 				0B6A78CE25E4C5B200A0BAF3 /* UIImage+Additions.m */,
 				0B6A78C425E4C56700A0BAF3 /* UIView+Additions.h */,
 				0B6A78C325E4C56700A0BAF3 /* UIView+Additions.m */,
+				0B4E1F0225E62BB700C59F88 /* UIDevice+RLiteDevice.h */,
+				0B4E1F0325E62BB700C59F88 /* UIDevice+RLiteDevice.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -284,6 +299,7 @@
 			files = (
 				0B6A78EF25E4C6FC00A0BAF3 /* SmallButton.m in Sources */,
 				0B6A78C525E4C56700A0BAF3 /* UIView+Additions.m in Sources */,
+				0B4E1F1825E64D9000C59F88 /* R_LBPCoverOperationView.m in Sources */,
 				0B6A789C25E4AC6C00A0BAF3 /* ViewController.m in Sources */,
 				0B6A78D625E4C5DB00A0BAF3 /* AddressBar.m in Sources */,
 				0B6A789625E4AC6C00A0BAF3 /* AppDelegate.m in Sources */,
@@ -292,7 +308,9 @@
 				0B6A78D725E4C5DB00A0BAF3 /* AddressBarController.m in Sources */,
 				0B6A78E725E4C6AF00A0BAF3 /* NSData+Common.m in Sources */,
 				0B6A78DB25E4C5FC00A0BAF3 /* TCHttpUtil.m in Sources */,
+				0B4E1F0425E62BB700C59F88 /* UIDevice+RLiteDevice.m in Sources */,
 				0B6A78E325E4C68900A0BAF3 /* NSString+UISize.m in Sources */,
+				0B4E1F1425E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m in Sources */,
 				0B6A78A725E4AC7100A0BAF3 /* main.m in Sources */,
 				0B6A78CC25E4C59000A0BAF3 /* ScanQRController.mm in Sources */,
 				0B6A78D025E4C5B200A0BAF3 /* UIImage+Additions.m in Sources */,
@@ -444,6 +462,7 @@
 				DEVELOPMENT_TEAM = 6S6F4R576X;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = tt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +483,7 @@
 				DEVELOPMENT_TEAM = 6S6F4R576X;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = tt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

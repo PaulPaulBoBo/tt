@@ -13,6 +13,10 @@
 #import "UIImage+Additions.h"
 #import "AddressBarController.h"
 #import "TCHttpUtil.h"
+#import "NSObject+YYAdd.h"
+#import <objc/runtime.h>
+#import "UIDevice+RLiteDevice.h"
+#import "Masonry.h"
 
 #define PLAY_URL    @"请输入或扫二维码获取播放地址"
 
@@ -60,6 +64,7 @@ typedef NS_ENUM(NSInteger, ENUM_TYPE_CACHE_STRATEGY) {
 
 @property (nonatomic, strong) TXLivePlayer *player;
 @property (nonatomic, strong) NSString *playUrl;
+@property (nonatomic, strong) UITextField *mytext;
 
 @end
 
@@ -87,6 +92,56 @@ typedef NS_ENUM(NSInteger, ENUM_TYPE_CACHE_STRATEGY) {
     if (@available(iOS 13.0, *)) {
         self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
     }
+    [self clickPlay:nil];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.allowRotation = 1;
+    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIDeviceOrientationPortrait] forKey:@"orientation"];
+    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIDeviceOrientationLandscapeLeft] forKey:@"orientation"];
+
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
+        if ([self.mytext isFirstResponder]) {
+            [self.mytext resignFirstResponder];
+        }
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ NSLog(@"进来啦");
+            [self.mytext becomeFirstResponder];
+        });
+    }
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.allowRotation = 0;
+    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIDeviceOrientationLandscapeLeft] forKey:@"orientation"];
+    [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:UIDeviceOrientationPortrait] forKey:@"orientation"];
+}
+
+// 不支持屏幕旋转
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+- (BOOL)checkIsExistPropertyWithInstance:(id)instance verifyPropertyName:(NSString *)verifyPropertyName {
+    unsigned int outCount, i;
+    
+    // 获取对象里的属性列表
+    objc_property_t * properties = class_copyPropertyList([instance class], &outCount);
+    for (i = 0; i < outCount; i++) {
+        objc_property_t property =properties[i];
+        //  属性名转成字符串
+        NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+        // 判断该属性是否存在
+        if ([propertyName isEqualToString:verifyPropertyName]) {
+            free(properties);
+            return YES;
+        }
+    }
+    free(properties);
+    return NO;
 }
 
 - (void)initUI {
@@ -107,6 +162,10 @@ typedef NS_ENUM(NSInteger, ENUM_TYPE_CACHE_STRATEGY) {
     _addressBarController.view.textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:PLAY_URL attributes:dic];
     _addressBarController.delegate = self;
     [self.view addSubview:_addressBarController.view];
+    [_addressBarController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.top.equalTo(self.view).offset(-20);
+    }];
     
     // 创建底部的功能按钮
     float startSpace = 12;
@@ -147,6 +206,9 @@ typedef NS_ENUM(NSInteger, ENUM_TYPE_CACHE_STRATEGY) {
     CGRect videoFrame = self.view.bounds;
     _videoView = [[UIView alloc] initWithFrame:CGRectMake(videoFrame.size.width, 0, videoFrame.size.width, videoFrame.size.height)];
     [self.view insertSubview:_videoView atIndex:0];
+    [_videoView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
     
     // 默认播放地址
     _addressBarController.text = @"http://liteavapp.qcloud.com/live/liteavdemoplayerstreamid.flv";

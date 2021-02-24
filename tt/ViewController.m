@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "TRTCCloud.h"
 #import "PlayViewController.h"
+#import "RLiveBraodcastPlayerViewController.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,7 @@
 }
 
 -(void)startAction:(UIButton *)sender {
-    PlayViewController *vc = [[PlayViewController alloc] init];
+    RLiveBraodcastPlayerViewController *vc = [[RLiveBraodcastPlayerViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
