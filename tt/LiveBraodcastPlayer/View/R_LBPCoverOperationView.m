@@ -7,6 +7,7 @@
 
 #import "R_LBPCoverOperationView.h"
 #import "Masonry.h"
+#import "R_LBPCommentView.h"
 
 @interface R_LBPCoverOperationView ()<UIGestureRecognizerDelegate>
 
@@ -15,6 +16,7 @@
 
 @property (nonatomic, strong) UIView *backView; // 返回视图
 @property (nonatomic, strong) UIView *shareView; // 分享视图
+@property (nonatomic, strong) R_LBPCommentView *commentView; // 评论视图
 
 @property (nonatomic, strong) ClickBackAction clickBackAction;
 @property (nonatomic, strong) ClickShareAction clickShareAction;
@@ -94,6 +96,14 @@ static CGFloat OperationViewStayDuration = 5; // 操作视图停留时间
     }];
     [self showOP];
     
+    [self addSubview:self.commentView];
+    [self.commentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self);
+        make.bottom.equalTo(self);
+        make.top.greaterThanOrEqualTo(self);
+        make.right.lessThanOrEqualTo(self);
+    }];
+
     [self layoutIfNeeded];
     [self addGradientLayerToView:self.topOPView upToDown:NO];
     [self addGradientLayerToView:self.bottomOPView upToDown:YES];
@@ -249,6 +259,16 @@ static CGFloat OperationViewStayDuration = 5; // 操作视图停留时间
         _shareView = [self createActionView:[UIImage imageNamed:@"log2"] action:@selector(shareAction:)];
     }
     return _shareView;
+}
+
+-(R_LBPCommentView *)commentView {
+    if(_commentView == nil) {
+        _commentView = [[R_LBPCommentView alloc] init];
+        [_commentView configClickSendComment:^(NSString * _Nonnull commentStr) {
+            NSLog(@"commentStr:%@", commentStr);
+        }];
+    }
+    return _commentView;
 }
 
 @end
