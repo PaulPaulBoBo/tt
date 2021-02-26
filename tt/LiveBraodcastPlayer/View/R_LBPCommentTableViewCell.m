@@ -10,7 +10,7 @@
 
 @interface R_LBPCommentTableViewCell ()
 
-@property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, strong) UILabel *contentLabel; // 内容标签
 
 @end
 
@@ -33,8 +33,8 @@
 -(void)loadCustomView {
     [self.contentView addSubview:self.contentLabel];
     [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(self.contentView).offset(3);
-        make.right.bottom.equalTo(self.contentView).offset(-3);
+        make.left.top.equalTo(self.contentView).offset(5);
+        make.right.bottom.equalTo(self.contentView).offset(-5);
     }];
 }
 
@@ -47,11 +47,11 @@
 -(UILabel *)contentLabel {
     if(_contentLabel == nil) {
         _contentLabel = [[UILabel alloc] init];
-        _contentLabel.backgroundColor = [UIColor clearColor];
+        _contentLabel.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.2];
         _contentLabel.textColor = [UIColor blackColor];
         _contentLabel.font = [UIFont systemFontOfSize:15 weight:(UIFontWeightRegular)];
-        _contentLabel.numberOfLines = 5;
-        _contentLabel.lineBreakMode = NSLineBreakByCharWrapping;
+        _contentLabel.numberOfLines = 0;
+        _contentLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     }
     return _contentLabel;
 }

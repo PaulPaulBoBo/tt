@@ -21,8 +21,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    NSString * const licenceURL = @"<获取到的licenseUrl>";
-    NSString * const licenceKey = @"<获取到的key>";
+    NSString * const licenceURL = @"http://license.vod2.myqcloud.com/license/v1/9bc310a9bf82c8d3b34bb816dc73ac6b/TXLiveSDK.licence";
+    NSString * const licenceKey = @"d9dfe593060ac073956b77443fe09228";
     //TXLiveBase 位于 "TXLiveBase.h" 头文件中
     [TXLiveBase setLicenceURL:licenceURL key:licenceKey];
     NSLog(@"SDK Version = %@", [TXLiveBase getSDKVersionStr]);

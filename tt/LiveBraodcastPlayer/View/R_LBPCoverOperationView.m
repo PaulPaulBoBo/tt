@@ -18,9 +18,9 @@
 @property (nonatomic, strong) UIView *shareView; // 分享视图
 @property (nonatomic, strong) R_LBPCommentView *commentView; // 评论视图
 
-@property (nonatomic, strong) ClickBackAction clickBackAction;
-@property (nonatomic, strong) ClickShareAction clickShareAction;
-@property (nonatomic, strong) SubmiteCommentAction submiteCommentAction;
+@property (nonatomic, strong) ClickBackAction clickBackAction; // 点击返回按钮回调
+@property (nonatomic, strong) ClickShareAction clickShareAction; // 提交评论事件回调
+@property (nonatomic, strong) SubmiteCommentAction submiteCommentAction; // 提交评论事件回调
 
 @end
 
@@ -103,26 +103,8 @@ static CGFloat OperationViewStayDuration = 5; // 操作视图停留时间
         make.top.greaterThanOrEqualTo(self);
         make.right.lessThanOrEqualTo(self);
     }];
-
-    [self layoutIfNeeded];
-    [self addGradientLayerToView:self.topOPView upToDown:NO];
-    [self addGradientLayerToView:self.bottomOPView upToDown:YES];
-}
-
--(void)addGradientLayerToView:(UIView *)view upToDown:(BOOL)upToDown {
-    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-    gradientLayer.frame = view.bounds;
-    // 渐变色颜色数组,可多个
-    UIColor *startColor = [UIColor clearColor];
-    UIColor *endColor =[[UIColor blackColor] colorWithAlphaComponent:0.2];
     
-    gradientLayer.colors = [NSArray arrayWithObjects:(id)[upToDown?startColor:endColor CGColor], (id)[upToDown?endColor:startColor CGColor], nil];
-    // 渐变的开始点 (不同的起始点可以实现不同位置的渐变,如图)
-    gradientLayer.startPoint = CGPointMake(0.5, 0.); //(0, 0)
-    // 渐变的结束点
-    gradientLayer.endPoint = CGPointMake(0.5, 1.); //(1, 1)
-    [view.layer insertSublayer:gradientLayer atIndex:0];
-    [view layoutIfNeeded];
+    [self.commentView refreshComments:@[@"1skjhdaljshdf", @"2cwiehfwe", @"3cmsoiehlbseurvsdfasdfhsef", @"4nsclaiuehnfiluaefeibid", @"5vnsdlisueirbglubucbybsdkjfalkjshdfkagsdkhf98734972638746283658egruwgefkugeufygasudfgs"]];
 }
 
 -(UIView *)createActionView:(UIImage *)image action:(SEL)action {
@@ -148,7 +130,6 @@ static CGFloat OperationViewStayDuration = 5; // 操作视图停留时间
     [coverBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(view);
     }];
-    
     return view;
 }
 
@@ -165,6 +146,7 @@ static CGFloat OperationViewStayDuration = 5; // 操作视图停留时间
 }
 
 -(void)tapBgView:(UIGestureRecognizer *)ges {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder)to:nil from:nil forEvent:nil];
     if(!OperationViewIsAnimation) {
         if(OperationViewIsAppear) {
             [self hideOP];
@@ -264,8 +246,10 @@ static CGFloat OperationViewStayDuration = 5; // 操作视图停留时间
 -(R_LBPCommentView *)commentView {
     if(_commentView == nil) {
         _commentView = [[R_LBPCommentView alloc] init];
+        __weak typeof(self) weakSelf = self;
         [_commentView configClickSendComment:^(NSString * _Nonnull commentStr) {
-            NSLog(@"commentStr:%@", commentStr);
+            __weak typeof(weakSelf) strongSelf = weakSelf;
+            [strongSelf.commentView refreshSelfComment:commentStr];
         }];
     }
     return _commentView;

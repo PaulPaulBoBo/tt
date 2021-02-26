@@ -21,6 +21,10 @@ typedef void(^ClickSendComment)(NSString *commentStr);
 /// @param comments 新评论数组
 -(void)refreshComments:(NSArray *)comments;
 
+/// 将自己发送的评论展示出来
+/// @param comment 自己的评论
+-(void)refreshSelfComment:(NSString *)comment;
+
 /// 获取列表已存在评论
 -(NSArray *)readExistComments;
 
