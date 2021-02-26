@@ -7,7 +7,6 @@
 
 #import "ViewController.h"
 #import "TRTCCloud.h"
-#import "PlayViewController.h"
 #import "RLiveBraodcastPlayerViewController.h"
 
 @interface ViewController ()

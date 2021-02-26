@@ -8,29 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0B46893025E72F8500ADD71A /* R_LBPCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B46892F25E72F8500ADD71A /* R_LBPCommentView.m */; };
-		0B4E1F0425E62BB700C59F88 /* UIDevice+RLiteDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E1F0325E62BB700C59F88 /* UIDevice+RLiteDevice.m */; };
 		0B4E1F1425E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E1F1325E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m */; };
 		0B4E1F1825E64D9000C59F88 /* R_LBPCoverOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E1F1725E64D9000C59F88 /* R_LBPCoverOperationView.m */; };
 		0B57EAB225E766A900627649 /* R_LBPCommentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B57EAB125E766A900627649 /* R_LBPCommentInputView.m */; };
 		0B57EABD25E7851400627649 /* R_LBPCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B57EABC25E7851400627649 /* R_LBPCommentTableViewCell.m */; };
 		0B6A789625E4AC6C00A0BAF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A789525E4AC6C00A0BAF3 /* AppDelegate.m */; };
 		0B6A789C25E4AC6C00A0BAF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A789B25E4AC6C00A0BAF3 /* ViewController.m */; };
-		0B6A789F25E4AC6C00A0BAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6A789D25E4AC6C00A0BAF3 /* Main.storyboard */; };
 		0B6A78A125E4AC7100A0BAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6A78A025E4AC7100A0BAF3 /* Assets.xcassets */; };
 		0B6A78A425E4AC7100A0BAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6A78A225E4AC7100A0BAF3 /* LaunchScreen.storyboard */; };
 		0B6A78A725E4AC7100A0BAF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78A625E4AC7100A0BAF3 /* main.m */; };
-		0B6A78C525E4C56700A0BAF3 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78C325E4C56700A0BAF3 /* UIView+Additions.m */; };
-		0B6A78CB25E4C59000A0BAF3 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78C825E4C59000A0BAF3 /* PlayViewController.m */; };
-		0B6A78CC25E4C59000A0BAF3 /* ScanQRController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78C925E4C59000A0BAF3 /* ScanQRController.mm */; };
-		0B6A78D025E4C5B200A0BAF3 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78CE25E4C5B200A0BAF3 /* UIImage+Additions.m */; };
-		0B6A78D625E4C5DB00A0BAF3 /* AddressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78D225E4C5DB00A0BAF3 /* AddressBar.m */; };
-		0B6A78D725E4C5DB00A0BAF3 /* AddressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78D525E4C5DB00A0BAF3 /* AddressBarController.m */; };
-		0B6A78DB25E4C5FC00A0BAF3 /* TCHttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78DA25E4C5FC00A0BAF3 /* TCHttpUtil.m */; };
-		0B6A78DF25E4C65200A0BAF3 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78DD25E4C65200A0BAF3 /* NSString+Common.m */; };
-		0B6A78E325E4C68900A0BAF3 /* NSString+UISize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78E125E4C68800A0BAF3 /* NSString+UISize.m */; };
-		0B6A78E725E4C6AF00A0BAF3 /* NSData+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78E625E4C6AF00A0BAF3 /* NSData+Common.m */; };
-		0B6A78EB25E4C6DB00A0BAF3 /* QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78E925E4C6DA00A0BAF3 /* QRCode.m */; };
-		0B6A78EF25E4C6FC00A0BAF3 /* SmallButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A78ED25E4C6FC00A0BAF3 /* SmallButton.m */; };
 		0BDB703925E7957E00370BB3 /* R_LBPWebSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB703825E7957E00370BB3 /* R_LBPWebSocketManager.m */; };
 		E868DD3B89E0CED6E96FFD12 /* libPods-tt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5497EF9C00D65D59CF7F7 /* libPods-tt.a */; };
 /* End PBXBuildFile section */
@@ -38,8 +24,6 @@
 /* Begin PBXFileReference section */
 		0B46892E25E72F8500ADD71A /* R_LBPCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = R_LBPCommentView.h; sourceTree = "<group>"; };
 		0B46892F25E72F8500ADD71A /* R_LBPCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = R_LBPCommentView.m; sourceTree = "<group>"; };
-		0B4E1F0225E62BB700C59F88 /* UIDevice+RLiteDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+RLiteDevice.h"; sourceTree = "<group>"; };
-		0B4E1F0325E62BB700C59F88 /* UIDevice+RLiteDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+RLiteDevice.m"; sourceTree = "<group>"; };
 		0B4E1F1225E63D1600C59F88 /* RLiveBraodcastPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLiveBraodcastPlayerViewController.h; sourceTree = "<group>"; };
 		0B4E1F1325E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLiveBraodcastPlayerViewController.m; sourceTree = "<group>"; };
 		0B4E1F1625E64D9000C59F88 /* R_LBPCoverOperationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = R_LBPCoverOperationView.h; sourceTree = "<group>"; };
@@ -53,35 +37,10 @@
 		0B6A789525E4AC6C00A0BAF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0B6A789A25E4AC6C00A0BAF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0B6A789B25E4AC6C00A0BAF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0B6A789E25E4AC6C00A0BAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B6A78A025E4AC7100A0BAF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B6A78A325E4AC7100A0BAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B6A78A525E4AC7100A0BAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6A78A625E4AC7100A0BAF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0B6A78C325E4C56700A0BAF3 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
-		0B6A78C425E4C56700A0BAF3 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
-		0B6A78C725E4C59000A0BAF3 /* ScanQRController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRController.h; sourceTree = "<group>"; };
-		0B6A78C825E4C59000A0BAF3 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-		0B6A78C925E4C59000A0BAF3 /* ScanQRController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScanQRController.mm; sourceTree = "<group>"; };
-		0B6A78CA25E4C59000A0BAF3 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
-		0B6A78CE25E4C5B200A0BAF3 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
-		0B6A78CF25E4C5B200A0BAF3 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
-		0B6A78D225E4C5DB00A0BAF3 /* AddressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBar.m; sourceTree = "<group>"; };
-		0B6A78D325E4C5DB00A0BAF3 /* AddressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBar.h; sourceTree = "<group>"; };
-		0B6A78D425E4C5DB00A0BAF3 /* AddressBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBarController.h; sourceTree = "<group>"; };
-		0B6A78D525E4C5DB00A0BAF3 /* AddressBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBarController.m; sourceTree = "<group>"; };
-		0B6A78D925E4C5FB00A0BAF3 /* TCHttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCHttpUtil.h; sourceTree = "<group>"; };
-		0B6A78DA25E4C5FC00A0BAF3 /* TCHttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCHttpUtil.m; sourceTree = "<group>"; };
-		0B6A78DD25E4C65200A0BAF3 /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
-		0B6A78DE25E4C65200A0BAF3 /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
-		0B6A78E125E4C68800A0BAF3 /* NSString+UISize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UISize.m"; sourceTree = "<group>"; };
-		0B6A78E225E4C68800A0BAF3 /* NSString+UISize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UISize.h"; sourceTree = "<group>"; };
-		0B6A78E525E4C6AF00A0BAF3 /* NSData+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Common.h"; sourceTree = "<group>"; };
-		0B6A78E625E4C6AF00A0BAF3 /* NSData+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Common.m"; sourceTree = "<group>"; };
-		0B6A78E925E4C6DA00A0BAF3 /* QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCode.m; sourceTree = "<group>"; };
-		0B6A78EA25E4C6DB00A0BAF3 /* QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
-		0B6A78ED25E4C6FC00A0BAF3 /* SmallButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallButton.m; sourceTree = "<group>"; };
-		0B6A78EE25E4C6FC00A0BAF3 /* SmallButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallButton.h; sourceTree = "<group>"; };
 		0BDB703725E7957E00370BB3 /* R_LBPWebSocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = R_LBPWebSocketManager.h; sourceTree = "<group>"; };
 		0BDB703825E7957E00370BB3 /* R_LBPWebSocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = R_LBPWebSocketManager.m; sourceTree = "<group>"; };
 		260383C8699F8D30F17961E3 /* Pods-tt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tt.release.xcconfig"; path = "Target Support Files/Pods-tt/Pods-tt.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +115,6 @@
 		0B6A789325E4AC6C00A0BAF3 /* tt */ = {
 			isa = PBXGroup;
 			children = (
-				0B6A78FB25E4C78400A0BAF3 /* tx */,
 				0B6A789425E4AC6C00A0BAF3 /* AppDelegate.h */,
 				0B6A789525E4AC6C00A0BAF3 /* AppDelegate.m */,
 				0B6A789A25E4AC6C00A0BAF3 /* ViewController.h */,
@@ -166,66 +124,8 @@
 				0B6A78A525E4AC7100A0BAF3 /* Info.plist */,
 				0B6A78A225E4AC7100A0BAF3 /* LaunchScreen.storyboard */,
 				0B6A78A625E4AC7100A0BAF3 /* main.m */,
-				0B6A789D25E4AC6C00A0BAF3 /* Main.storyboard */,
 			);
 			path = tt;
-			sourceTree = "<group>";
-		};
-		0B6A78FB25E4C78400A0BAF3 /* tx */ = {
-			isa = PBXGroup;
-			children = (
-				0B6A78FD25E4C7C200A0BAF3 /* Address */,
-				0B6A78FC25E4C7A100A0BAF3 /* Category */,
-				0B6A790025E4C7DD00A0BAF3 /* Else */,
-				0B6A78CA25E4C59000A0BAF3 /* PlayViewController.h */,
-				0B6A78C825E4C59000A0BAF3 /* PlayViewController.m */,
-			);
-			path = tx;
-			sourceTree = "<group>";
-		};
-		0B6A78FC25E4C7A100A0BAF3 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				0B6A78E525E4C6AF00A0BAF3 /* NSData+Common.h */,
-				0B6A78E625E4C6AF00A0BAF3 /* NSData+Common.m */,
-				0B6A78DE25E4C65200A0BAF3 /* NSString+Common.h */,
-				0B6A78DD25E4C65200A0BAF3 /* NSString+Common.m */,
-				0B6A78E225E4C68800A0BAF3 /* NSString+UISize.h */,
-				0B6A78E125E4C68800A0BAF3 /* NSString+UISize.m */,
-				0B6A78CF25E4C5B200A0BAF3 /* UIImage+Additions.h */,
-				0B6A78CE25E4C5B200A0BAF3 /* UIImage+Additions.m */,
-				0B6A78C425E4C56700A0BAF3 /* UIView+Additions.h */,
-				0B6A78C325E4C56700A0BAF3 /* UIView+Additions.m */,
-				0B4E1F0225E62BB700C59F88 /* UIDevice+RLiteDevice.h */,
-				0B4E1F0325E62BB700C59F88 /* UIDevice+RLiteDevice.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		0B6A78FD25E4C7C200A0BAF3 /* Address */ = {
-			isa = PBXGroup;
-			children = (
-				0B6A78D325E4C5DB00A0BAF3 /* AddressBar.h */,
-				0B6A78D225E4C5DB00A0BAF3 /* AddressBar.m */,
-				0B6A78D425E4C5DB00A0BAF3 /* AddressBarController.h */,
-				0B6A78D525E4C5DB00A0BAF3 /* AddressBarController.m */,
-			);
-			path = Address;
-			sourceTree = "<group>";
-		};
-		0B6A790025E4C7DD00A0BAF3 /* Else */ = {
-			isa = PBXGroup;
-			children = (
-				0B6A78EA25E4C6DB00A0BAF3 /* QRCode.h */,
-				0B6A78E925E4C6DA00A0BAF3 /* QRCode.m */,
-				0B6A78C725E4C59000A0BAF3 /* ScanQRController.h */,
-				0B6A78C925E4C59000A0BAF3 /* ScanQRController.mm */,
-				0B6A78EE25E4C6FC00A0BAF3 /* SmallButton.h */,
-				0B6A78ED25E4C6FC00A0BAF3 /* SmallButton.m */,
-				0B6A78D925E4C5FB00A0BAF3 /* TCHttpUtil.h */,
-				0B6A78DA25E4C5FC00A0BAF3 /* TCHttpUtil.m */,
-			);
-			path = Else;
 			sourceTree = "<group>";
 		};
 		0BDB703625E7955A00370BB3 /* Manager */ = {
@@ -314,7 +214,6 @@
 			files = (
 				0B6A78A425E4AC7100A0BAF3 /* LaunchScreen.storyboard in Resources */,
 				0B6A78A125E4AC7100A0BAF3 /* Assets.xcassets in Resources */,
-				0B6A789F25E4AC6C00A0BAF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,27 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B6A78EF25E4C6FC00A0BAF3 /* SmallButton.m in Sources */,
 				0BDB703925E7957E00370BB3 /* R_LBPWebSocketManager.m in Sources */,
-				0B6A78C525E4C56700A0BAF3 /* UIView+Additions.m in Sources */,
 				0B4E1F1825E64D9000C59F88 /* R_LBPCoverOperationView.m in Sources */,
 				0B6A789C25E4AC6C00A0BAF3 /* ViewController.m in Sources */,
-				0B6A78D625E4C5DB00A0BAF3 /* AddressBar.m in Sources */,
 				0B6A789625E4AC6C00A0BAF3 /* AppDelegate.m in Sources */,
-				0B6A78DF25E4C65200A0BAF3 /* NSString+Common.m in Sources */,
-				0B6A78CB25E4C59000A0BAF3 /* PlayViewController.m in Sources */,
-				0B6A78D725E4C5DB00A0BAF3 /* AddressBarController.m in Sources */,
 				0B46893025E72F8500ADD71A /* R_LBPCommentView.m in Sources */,
-				0B6A78E725E4C6AF00A0BAF3 /* NSData+Common.m in Sources */,
-				0B6A78DB25E4C5FC00A0BAF3 /* TCHttpUtil.m in Sources */,
-				0B4E1F0425E62BB700C59F88 /* UIDevice+RLiteDevice.m in Sources */,
-				0B6A78E325E4C68900A0BAF3 /* NSString+UISize.m in Sources */,
 				0B4E1F1425E63D1600C59F88 /* RLiveBraodcastPlayerViewController.m in Sources */,
 				0B6A78A725E4AC7100A0BAF3 /* main.m in Sources */,
 				0B57EABD25E7851400627649 /* R_LBPCommentTableViewCell.m in Sources */,
-				0B6A78CC25E4C59000A0BAF3 /* ScanQRController.mm in Sources */,
-				0B6A78D025E4C5B200A0BAF3 /* UIImage+Additions.m in Sources */,
-				0B6A78EB25E4C6DB00A0BAF3 /* QRCode.m in Sources */,
 				0B57EAB225E766A900627649 /* R_LBPCommentInputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,14 +281,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B6A789D25E4AC6C00A0BAF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B6A789E25E4AC6C00A0BAF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B6A78A225E4AC7100A0BAF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
